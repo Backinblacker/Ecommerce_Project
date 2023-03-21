@@ -55,11 +55,12 @@ li a:hover {
 p{
     font-size: 20;
 }
-.nav-container{
+
+/* .nav-container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-}
+    justify-content: center;
+} */
 
 .learn-more{
     color: #bf7631;
@@ -83,4 +84,9 @@ p{
     justify-content: center;
     align-items: center;
     background-color: #BF7631;
+}
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
