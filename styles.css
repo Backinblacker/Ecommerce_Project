@@ -35,6 +35,12 @@ h3{
     border: 1px solid black;
     width:60%;
 }
+.hr-header{
+    border: 1px solid black;
+    width:80%;
+    display: flex;
+    justify-content: center;
+}
 
 ul {
     list-style-type: none;
@@ -104,6 +110,7 @@ li a:hover {
     flex-direction: row;
     justify-content: space-between;
     max-width: 350px;
+    align-items: center;
 }
 
 .p2{
@@ -132,13 +139,52 @@ li a:hover {
     color: white;
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
     background-image: linear-gradient(to right, black, transparent,black),url(./UX-HTML-CSS/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg);
     height: 500px;
-    /* background-repeat: no-repeat; */
     background-size: cover;
 }
+.main-type1{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    padding:50px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
 
+.main-type2{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    padding:50px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.txtcontainer1{
+    display: flex;
+    /* justify-content: left;
+    flex-wrap: wrap;
+    align-items: baseline; */
+}
+
+.txtcontainer2{
+    display: flex;
+    flex-direction: column;
+}
+.txtcontainer3{
+    display: flex;
+}
+.txtcontainer4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.txtcontainer5{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
 .product-image{
     max-width: 350px;
     object-fit: cover;
