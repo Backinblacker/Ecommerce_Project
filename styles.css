@@ -19,14 +19,21 @@ body{
 h1{
     font-size: 45;
     border-bottom: 2px solid black;
+    width: 40%;
 }
 
 h2{
     font-size: 30;
-    border-bottom: 2px solid black;
+    float:left;
 }
+
 h3{
     font-size: 20;
+}
+
+.hr-product{
+    border: 1px solid black;
+    width:60%;
 }
 
 ul {
@@ -52,20 +59,27 @@ li a {
 li a:hover {
     background-color: Teal;
 }
-p{
-    font-size: 20;
-}
 
-/* .nav-container{
+.nav-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-} */
-
-.learn-more{
-    color: #bf7631;
-    border-bottom: 1px solid #BF7631;
+    justify-content: space-between;
+    align-content: baseline;
 }
+
+.link:link, link:visited{
+    background-color: white;
+    color: #bf7631;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+/* .learn-more{
+    color: #bf7631;
+    border-bottom: 1px solid #BF7631
+} */
 
 .button{
     background-color: #BF7631;
@@ -78,15 +92,64 @@ p{
     font-size: 30;
 }
 
+.container-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grouped-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 350px;
+}
+
+.p2{
+    float:right;
+    font-size: 30;   
+}
+
+.logo-image{
+    height: 40px;
+}
+
+.logo-text{
+    font-size: 40;
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-image{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    background-image: linear-gradient(to right, black, transparent,black),url(./UX-HTML-CSS/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg);
+    height: 500px;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+.product-image{
+    max-width: 350px;
+    object-fit: cover;
+    max-height: 265px;
+    border: 1px solid black;
+}
+
 .foot-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: #BF7631;
-}
-.container-1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

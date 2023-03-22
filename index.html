@@ -8,27 +8,34 @@
     <title>Cara Cara E-Commerce Project</title>
 </head>
 <body>      
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>            
-            <p>CARA</p><img src=UX-HTML-CSS\icons8-pottery-96.png alt="colored pottery icon">CARA</p>
-            <!-- <img src="UX-HTML-CSS\1200px-Google_Magnifying_Glass.svg.png" alt="Search icon"> -->
-            <li style="float:right"><a class="active" href="#cart">CART (0)</a> </li>
-        </ul>
-        <hr style="width:80%;">
-    </nav>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Contact">Contact</a></li>  
+            </ul>       
+        </nav>  
+        <div class="logo"> 
+            <p class="logo-text">CARA</p>
+            <img class="logo-image" src=UX-HTML-CSS\icons8-pottery-96.png alt="colored pottery icon">
+            <p class="logo-text">CARA</p>
+        </div>
+        <p style="float:right"><a class="active" href="#cart">CART (0)</a> </p>
+    </div>
+    <hr style="width:80%;">
     <br>
     <br>
     <header>  
         <br>
         <div>CERAMICS CRAFTED BY HAND...</div>
-        <img src="UX-HTML-CSS\earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="potter wheel and hands">
+        <div class="main-image" id="Home">
+            <!-- <img src="UX-HTML-CSS\earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="potter wheel and hands"> -->
+        </div> 
         <div>...FROM THE GROUND UP</div>
     </header>
-    <br>
+    <br id="About">
     <h1>ABOUT US</h1>
     <br>
     <section>
@@ -41,111 +48,165 @@
     </section>
     <br>
     <div>
-        <h1>OUR PRODUCTS</h1>
+        <h1 id="Products">OUR PRODUCTS</h1>
     </div>
     <br>
     <section class="container-1">
         <section>
-            <img src="UX-HTML-CSS\tom-crew-7HuTGlUfQSo-unsplash.jpg" alt="Three Bowls">
+            <img class="product-image" src="UX-HTML-CSS\tom-crew-7HuTGlUfQSo-unsplash.jpg" alt="Three Bowls" width="400px" height="265px">
             <div>
-                <h2>MUNDO BOWLS</h2>
-                <a>$48.00</a><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                <a class="learn-more">LEARN MORE
-                    <a href="#" class="button">ADD TO CART</a>
-                </a><br>
-            </div>
-        </section>
-        <section>
-            <img src="UX-HTML-CSS\oriento-maVIpNNtmlQ-unsplash.jpg" alt="Red Vase">
-            <div>
-                <h2>NATUREZA VASE  $37.00</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                <a class="learn-more">LEARN MORE
-                    <a href="#" class="button">ADD TO CART</a>
-                </a><br>
-            </div>
-        </section>
-        <section>
-            <img src="UX-HTML-CSS\tom-crew-bgIO-u4GEfI-unsplash.jpg" alt="Two Bowls">
-            <div>
-                <h2>FEIRA BOWLS     $29.00</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                <a class="learn-more">LEARN MORE
-                    <a href="#" class="button">ADD TO CART</a>
-                </p><br>
-            </div>
-        </section>
-    </section>
-    <section class="container-1">
-        <section>
-            <img src="UX-HTML-CSS\tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="Two Pots">
-            <div>
-                <h2>NATUREZA POTS $59.00</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                <a class="learn-more">LEARN MORE
-                    <a href="#" class="button">ADD TO CART</a>
-                </a><br>
+                <h2>MUNDO BOWLS</h2><br>
+                <p class="p2">$48.00</p><br>
+                <hr class="hr-product">
             </div>
             <br>
-        </section>
-            <section>
-                <img src="UX-HTML-CSS\linh-le-a0rE64YJDA4-unsplash.jpg" alt="White Vase">
-                <div>
-                    <h2>PEDRA VASE  $31.00</h2><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                    <a class="learn-more">LEARN MORE
-                        <a href="#" class="button">ADD TO CART</a>
-                    </a><br>
-                </div>
-            </section>
-            <section>
-                <img src="UX-HTML-CSS\tom-crew-oiZAQvxTcYQ-unsplash.jpg" alt="Three Pots">
-                <div>
-                    <h2>VIAJA POTS     $57.00</h2><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                    <a class="learn-more">LEARN MORE
-                        <a href="#" class="button">ADD TO CART</a>
-                    </a><br>
-                </div>
-            </section>
-        </section>
-    </section>
-    <section class="container-1">
-        <section>
-            <img src="UX-HTML-CSS\tom-crew-YA2E3d7a9Wo-unsplash.jpg" alt="Plates">
-            <div>
-                <h2>SERVICO PLATES $35.00</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                <a class="learn-more">LEARN MORE
-                    <a href="#" class="button">ADD TO CART</a>
-                </a><br>
-            </div>
-        </section>
-        <br>
-        <section>
-            <img src="UX-HTML-CSS\oriento-l0ah3UBLppo-unsplash.jpg" alt="Blue Vase">
-            <div>
-                <h2>CAMPEAO VASE  $37.00</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                <a class="learn-more">LEARN MORE
-                    <a href="#" class="button">ADD TO CART</a>
-                </a><br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
             </div>
         </section>
         <section>
-            <img src="UX-HTML-CSS\tom-crew-SITGdvztUdg-unsplash.jpg" alt="More Bowls">
+            <img class="product-image" src="UX-HTML-CSS\oriento-maVIpNNtmlQ-unsplash.jpg" alt="Red Vase" width="400px" height="265px">
             <div>
-                <h2>TROCA BOWLS     $25.00</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Nulla faucibus consequat lacus, ut ullamcorper quam venenatis id. Fusce at orci vestibulum tortor condimentum dapibus in tristique justo. Morbi turpis felis, eleifend eget volutpat ut, faucibus ac neque. Nam eget magna id ligula fringilla rutrum. Vivamus lorem eros, aliquet in lacus interdum, sagittis vehicula tellus. Nam sit amet rhoncus nisl, id aliquam ipsum. Nullam ultrices sed elit ac fermentum. Proin ultrices semper neque, quis lacinia diam interdum sit amet. Ut tincidunt ligula in eros gravida, ac molestie urna porttitor.</p><br>
-                <a class="learn-more">LEARN MORE
-                    <a href="#" class="button">ADD TO CART</a>
-                </a><br>
+                <h2>NATUREZA VASE</h2><br>
+                <p class="p2">$37.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a class="link" href="#" target="_blank">LEARN MORE</a>
+                <a href="#" class="button">ADD TO CART</a>
+                <br>
+            </div>
+        </section>
+        <section>
+            <img class="product-image" src="UX-HTML-CSS\tom-crew-bgIO-u4GEfI-unsplash.jpg" alt="Two Bowls" width="400px" height="265px">
+            <div>
+                <h2>FEIRA BOWLS</h2><br>
+                <p class="p2">$29.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
             </div>
         </section>
     </section>
     <br>
-    <h1>CONTACT US</h1>
+    <br>
+    <section class="container-1">
+        <div>
+            <img class="product-image" src="UX-HTML-CSS\tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="Two Pots" width="400px" height="265px">
+            <div>
+                <h2>NATUREZA POTS</h2><br>
+                <p class="p2">$59.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
+            </div>
+        </div>
+        <div>
+            <img class="product-image" src="UX-HTML-CSS\linh-le-a0rE64YJDA4-unsplash.jpg" alt="White Vase" width="400px">
+            <div>
+                <h2>PEDRA VASE</h2><br>
+                <p class="p2">$31.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
+            </div>
+        </div>
+        <div>
+            <img class="product-image" src="UX-HTML-CSS\tom-crew-oiZAQvxTcYQ-unsplash.jpg" alt="Three Pots" width="400px" height="265px">
+            <div>
+                <h2>VIAJA POTS</h2><br>
+                <p class="p2">$57.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
+            </div>
+        </div>
+    </section>
+    <section class="container-1">
+        <div>
+            <img class="product-image" src="UX-HTML-CSS\tom-crew-YA2E3d7a9Wo-unsplash.jpg" alt="Two Pots" width="400px" height="265px">
+            <div>
+                <h2>SERVICO PLATES</h2><br>
+                <p class="p2">$35.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
+            </div>
+        </div>
+        <div>
+            <img class="product-image" src="UX-HTML-CSS\oriento-l0ah3UBLppo-unsplash.jpg" alt="White Vase" width="400px">
+            <div>
+                <h2>CAMPEAO VASE</h2><br>
+                <p class="p2">$37.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
+            </div>
+        </div>
+        <div>
+            <img class="product-image" src="UX-HTML-CSS\tom-crew-SITGdvztUdg-unsplash.jpg" alt="Three Pots" width="400px" height="265px">
+            <div>
+                <h2>TROCA BOWLS</h2><br>
+                <p class="p2">$25.00</p><br>
+                <hr class="hr-product">
+            </div>
+            <br>
+            <br>
+            <p class="grouped-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo. Fusce volutpat vitae erat sit amet auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tortor lorem, tristique sit amet iaculis non, varius eu leo.</p><br>
+            <div class="grouped-name">
+                <a href="#" target="_blank">LEARN MORE</a>
+                <p href="#" class="button">ADD TO CART</p>
+                <br>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <h1 id="Contact">CONTACT US</h1>
         <form action="/action_page.php">
             <label for="email">EMAIL</label>
             <input type="text" id="email" name="email"><br>
@@ -156,11 +217,13 @@
 </body>
 <footer>
     <div class="foot-container">
-        <img src="UX-HTML-CSS\icons8-youtube-96.png" alt="TubeYoulogo">
-        <img src="UX-HTML-CSS\icons8-facebook-96 (1).png" alt="BookFace">
-        <h3>CARA<img src="UX-HTML-CSS\icons8-pottery-96 (1).png" alt="Pottery White">CARA</h3>
-        <img src="UX-HTML-CSS\icons8-twitter-96.png" alt="Tweeter">
-        <img src="UX-HTML-CSS\icons8-instagram-96.png" alt="RIghtAwayGram">
+        <img img class="logo-image" src="UX-HTML-CSS\icons8-youtube-96.png" alt="TubeYoulogo">
+        <img img class="logo-image" src="UX-HTML-CSS\icons8-facebook-96 (1).png" alt="BookFace">
+        <p class="logo-text">CARA</p>
+        <img class="logo-image" src="UX-HTML-CSS\icons8-pottery-96 (1).png" alt="Pottery White">
+        <p class="logo-text">CARA</p>
+        <img img class="logo-image" src="UX-HTML-CSS\icons8-twitter-96.png" alt="Tweeter">
+        <img img class="logo-image" src="UX-HTML-CSS\icons8-instagram-96.png" alt="RIghtAwayGram">
     </div>
 </footer>
 </html>
